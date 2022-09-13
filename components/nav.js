@@ -8,27 +8,30 @@ class NavBarMenu extends HTMLElement {
         this.innerHTML = `
             <nav id="nav">
                 <ul>
-                    <li className="current"><a href="index.html">Home</a></li>
+                    <li className="current"><a href="index.html">Home</a></li>                    
                     <li>
-                        <a href="#">Dropdown</a>
+                        <a href="menu.html">Menus</a>
                         <ul>
-                            <li><a href="#">Lorem ipsum dolor</a></li>
-                            <li><a href="#">Magna phasellus</a></li>
-                            <li>
-                                <a href="#">Phasellus consequat</a>
+                            <li><a href="menu.html#Breakfast">Breakfast</a>
                                 <ul>
-                                    <li><a href="#">Lorem ipsum dolor</a></li>
-                                    <li><a href="#">Phasellus consequat</a></li>
-                                    <li><a href="#">Magna phasellus</a></li>
-                                    <li><a href="#">Etiam dolore nisl</a></li>
+                                    <li><a href="menu.html#BreakfastSandwich">Sandwiches</a></li>
+                                    <li><a href="menu.html#BreakfastBurritos">Burritos</a></li>                                    
                                 </ul>
                             </li>
-                            <li><a href="#">Veroeros feugiat</a></li>
+                            <li><a href="menu.html#Lunch">Lunch</a>
+                                <ul>
+                                    <li><a href="menu.html#LunchSandwich">Sandwiches</a></li>
+                                    <li><a href="menu.html#LunchBurger">Burgers</a></li>
+                                    <li><a href="menu.html#LunchSouth">South of the border</a></li>
+                                    <li><a href="menu.html#LunchSalad">Salads</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="menu.html#Extra">Extras</a></li>
                         </ul>
                     </li>
-                    <li><a href="left-sidebar.html">Left Sidebar</a></li>
-                    <li><a href="right-sidebar.html">Right Sidebar</a></li>
-                    <li><a href="no-sidebar.html">No Sidebar</a></li>
+                    <li><a href="left-sidebar.html">Location</a></li>
+                    <li><a href="right-sidebar.html">Catering</a></li>
+                    <li><a href="no-sidebar.html">About us</a></li>
                 </ul>
             </nav>
         `
