@@ -8,8 +8,8 @@ class NavBarMenu extends HTMLElement {
         this.innerHTML = `
             <nav id="nav">
                 <ul>
-                    <li className="current"><a href="index.html">Home</a></li>                    
-                    <li>
+                    <li id="home"><a href="index.html">Home</a></li>                    
+                    <li id="menus">
                         <a href="menu.html">Menus</a>
                         <ul>
                             <li><a href="menu.html#Breakfast">Breakfast</a>
@@ -29,9 +29,9 @@ class NavBarMenu extends HTMLElement {
                             <li><a href="menu.html#Extra">Extras</a></li>
                         </ul>
                     </li>
-                    <li><a href="left-sidebar.html">Location</a></li>
-                    <li><a href="right-sidebar.html">Catering</a></li>
-                    <li><a href="no-sidebar.html">About us</a></li>
+                    <li id="location"><a href="left-sidebar.html">Location</a></li>
+                    <li id="catering"><a href="right-sidebar.html">Catering</a></li>
+                    <li id="about"><a href="no-sidebar.html">About us</a></li>
                 </ul>
             </nav>
         `

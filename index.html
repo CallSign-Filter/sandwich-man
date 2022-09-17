@@ -24,8 +24,29 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<script>
+			function activeNavTab() {
+				let tab = document.getElementById('home');
+				tab.className += 'current'
+			};
+		</script>
+		<style>
+			body {
+				background-image: url('images/Logo-noBackground.png');
+				background-color: rgba(255,255,255,0.8);
+				background-blend-mode: lighten;
+				background-size: contain;
+			}
+			div.box {
+				background-color: transparent;
+			}
+		</style>
 	</head>
-	<body class="is-preload homepage">
+	<body onload="activeNavTab()" class="is-preload homepage">
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -47,14 +68,14 @@
 				<div id="banner-wrapper">
 					<div id="banner" class="box container">
 						<div class="row">
-							<div class="col-7 col-12-medium">
+							<div class="col-7 col-12-medium" >
 <!--								<h3>Feeding Ventura County since 1965</h3>-->
-								<p>Feeding Ventura County since 1965</p>
+								<p>Feeding Ventura County<br/>since 1965</p>
 							</div>
 							<div class="col-5 col-12-medium">
 								<ul>
 									<li><a href="menu.html" class="button large icon solid fa-arrow-circle-right">View Menu</a></li>
-									<li><a href="#main-wrapper" class="button alt large icon solid fa-question-circle">More info</a></li>
+									<li><a href="#main-wrapper" class="button alt large icon solid fa-question-circle">Contact Us</a></li>
 								</ul>
 							</div>
 						</div>
