@@ -1,4 +1,4 @@
-class NavBarMenu extends HTMLElement {
+class FooterText extends HTMLElement {
     constructor() {
         super();
     }
