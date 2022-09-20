@@ -2686,3 +2686,22 @@ input, select, textarea {
 			}
 
 	}
+
+/* My Stuff */
+body {
+	background-image: url('../../images/Logo-noBackground.png');
+	background-color: rgba(185, 188, 196, 0.8);
+	background-blend-mode: lighten;
+	background-size: contain;
+}
+div.box {
+	background-color: transparent;
+}
+#copyright > ul.menu > li , a, span {
+	color: #222222;
+}
+button.social {
+	padding: 0.6em 1.5em !important;
+	width: 72px;
+
+}

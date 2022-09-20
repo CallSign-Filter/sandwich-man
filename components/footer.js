@@ -5,39 +5,50 @@ class FooterText extends HTMLElement {
 
 
     connectedCallback() {
-        this.innerHTML = `
-            <nav id="nav">
-                <ul>
-                    <li id="home"><a href="index.html">Home</a></li>                    
-                    <li id="menus">
-                        <a href="menu.html">Menus</a>
-                        <ul>
-                            <li><a href="menu.html#Breakfast">Breakfast</a>
-                                <ul>
-                                    <li><a href="menu.html#BreakfastSandwich">Sandwiches</a></li>
-                                    <li><a href="menu.html#BreakfastBurritos">Burritos</a></li>                                    
-                                </ul>
+        this.innerHTML = `    
+        <div id="footer-wrapper">
+            <footer id="footer" class="container">
+                    <div class="row">
+                        <div class="col-12" style="text-align: center">
+                            <a class="image"><img src="../../images/yelp.png"/> </a>
+                        </div>
+                    </div>
+                <div class="row">
+                    <div class="col-12" style="text-align: center">
+                        <ul class="menu">
+                            <li>
+                                <button class="icon social" style="margin-bottom: 5px"><a
+                                    href="https://www.yelp.com/biz/the-sandwich-man-ventura" target="_blank"
+                                    class="icon brands fa-yelp"><span class="label">Yelp</span></a></button>
                             </li>
-                            <li><a href="menu.html#Lunch">Lunch</a>
-                                <ul>
-                                    <li><a href="menu.html#LunchSandwich">Sandwiches</a></li>
-                                    <li><a href="menu.html#LunchBurger">Burgers</a></li>
-                                    <li><a href="menu.html#LunchSouth">South of the border</a></li>
-                                    <li><a href="menu.html#LunchSalad">Salads</a></li>
-                                </ul>
+                            <li>
+                                <button class="icon social"><a
+                                    href="https://m.facebook.com/profile.php?id=119440948066339" target="_blank"
+                                    class="icon brands fa-facebook-f"><span class="label">Facebook</span></a>
+                                </button>
                             </li>
-                            <li><a href="menu.html#Extra">Extras</a></li>
+                            <li><span>1575 Los Angeles Ave, Ventura, CA 93004</span></li>
+                            <li><span><a href="tel:805-647-5374">(805) 647-5374</a></span></li>
                         </ul>
-                    </li>
-                    <li id="location"><a href="location.html">Location</a></li>
-                    <li id="catering"><a href="catering.html">Catering</a></li>
-                    <li id="about"><a href="about.html">About us</a></li>
-                </ul>
-            </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div id="copyright">
+                            <ul class="menu">
+                                <li>&copy;<a href="mailto:website@brandonhessler.com">Brandon Hessler. All rights
+                                    reserved</a></li>
+                                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>        
         `
     }
 
 }
 
-customElements.define('nav-bar-menu', NavBarMenu)
+customElements.define('footer-bar', FooterText)
 

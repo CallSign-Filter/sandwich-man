@@ -29,7 +29,7 @@ class NavBarMenu extends HTMLElement {
                             <li><a href="menu.html#Extra">Extras</a></li>
                         </ul>
                     </li>
-                    <li id="location"><a href="location.html">Location</a></li>
+<!--                    <li id="location"><a href="location.html">Location</a></li>-->
                     <li id="catering"><a href="catering.html">Catering</a></li>
                     <li id="about"><a href="about.html">About us</a></li>
                 </ul>

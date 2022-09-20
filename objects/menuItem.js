@@ -18,5 +18,14 @@ class MenuItem {
             return this;
         }
     }
+
+    getHtml() {
+        const numSpaces = 30 - this.itemName.length;
+        let spaces = ""
+        for (let i = 0; i < numSpaces; i++) {
+            spaces += '&nbsp;'
+        }
+        return '<div class="menuitem card"><span>' + this.itemName + '</span>' + spaces + '<span style="padding-left: 10px"> $' + this.price + '</span></div><hr style="border-color: #222222"/>';
+    }
 }
 
