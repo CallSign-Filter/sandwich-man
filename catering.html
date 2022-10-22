@@ -10,6 +10,11 @@
 	html {
 		scroll-behavior: smooth;
 	}
+	@media (max-width: 980px) {
+		.hide-when-small {
+			display: none;
+		}
+	}
 </style>
 <script>
 	function activeNavTab() {
@@ -33,6 +38,7 @@
 
 			<!-- Header -->
 				<div id="header-wrapper">
+					<img class="hide-when-small" src="images/Logo-noBackground.png" width="200" style="float: left; margin-left: 50px" alt="" />
 					<header id="header" class="container">
 
 						<!-- Logo -->

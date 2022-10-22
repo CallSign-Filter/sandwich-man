@@ -35,125 +35,271 @@
 		padding: 1em 0.5em 0.75em 0.5em !important;
 	}
 	.menuitem {
-		padding: 1em;
+		padding-left: 0.5em;
 		font-family: "Droid Sans Mono",monospace;
 	}
+
+	div.menuitem > span {
+		font-family: Lato,serif;
+		color: rgb(211, 31, 49);
+	}
+
+	.pointer {
+		cursor: pointer;
+	}
+
+	@media (max-width: 980px) {
+		.hide-when-small {
+			display: none;
+		}
+		.smallImage {
+			width: 80% !important;
+		}
+		.smallSection {
+			margin-left: 20%
+		}
+	}
+
 </style>
 <html>
-	<head>
-		<title>The Sandwich Man</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
-	</head>
-	<body onload="activeNavTab()" class="is-preload homepage">
-		<div id="page-wrapper">
+<head>
+	<title>The Sandwich Man</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+</head>
+<body onload="activeNavTab()" class="is-preload homepage">
+<div id="page-wrapper">
 
-			<!-- Header -->
-				<div id="header-wrapper">
-					<header id="header" class="container">
+	<!-- Header -->
+	<div id="header-wrapper">
+		<img class="hide-when-small" src="images/Logo-noBackground.png" width="200" style="float: left; margin-left: 50px" alt="" />
+		<header id="header" class="container">
 
-						<!-- Logo -->
-							<div id="logo">
-								<h1><a href="index.html">The Sandwich Man</a></h1>
-							</div>
+			<!-- Logo -->
+			<div id="logo">
+				<h1><a href="index.html">The Sandwich Man</a></h1>
+			</div>
 
-						<!-- Nav -->
-							<nav-bar-menu></nav-bar-menu>
+			<!-- Nav -->
+			<nav-bar-menu></nav-bar-menu>
 
-					</header>
+		</header>
+	</div>
+	<!-- Features -->
+	<div id="features-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-4 col-12-medium">
+					<section class="feature smallSection">
+						<a href="#Breakfast" class="image featured"><img class="smallImage" src="images/burrito.jpg" alt="" /></a>
+					</section>
 				</div>
-			<h1>Menu</h1>
-			<!-- Features -->
-				<div id="features-wrapper">
-					<div class="container">
-						<h2>Breakfast</h2>
-						<div class="row">
-							<div class="col-6 col-12-medium">
-								<!-- TODO get a picture for this Box -->
-									<section class="box feature">
-										<a href="#BreakfastSandwich" class="image featured"><img src="images/nacho.jpg" alt="" /></a>
-									</section>
-								<a id="BreakfastSandwich" href="#BreakfastSandwich" data-toggle="collapse" data-target="#BreakfastSandwichDiv" aria-expanded="true" aria-controls="BreakfastSandwichDiv"><h3 style="text-align: center; background-color: whitesmoke; margin-bottom: 0; padding: 1em 0">Sandwiches&nbsp;&nbsp;<i class="fa-solid fa-caret-right"></i></h3></a>
-								<div id="BreakfastSandwichDiv" class="collapse" style="background-color: whitesmoke" data-parent="#BreakfastSandwich">
-									<hr style="border-color: #222222; margin: 0"/>
+				<div class="col-4 col-12-medium">
+					<section class="feature smallSection">
+						<a href="#Lunch" class="image featured"><img class="smallImage" src="images/bomber.png" alt="" /></a>
+					</section>
+				</div>
+				<div class="col-4 col-12-medium">
+					<section class="feature smallSection">
+						<a href="#Breakfast" class="image featured"><img class="smallImage" src="images/chefSalad.png" alt="" /></a>
+					</section>
+				</div>
+			</div>
+
+			<h2 style="width: 100%; background-color: whitesmoke; border: 1px solid darkgrey; padding: 0.25em" id="Breakfast" aria-expanded="true" aria-controls="more-1" class="pointer toggle-content1" hidden>
+				<span style="text-align:center;" class="text">Breakfast Menu</span> <span class="visually-hidden1"></span></h2>
+			<p></p>
+			<!--			<div class="col-12-medium col-6-large">-->
+			<div class="col-6 col-12-medium">
+				<dl id="more-1" class="fulltext1" style="background-color: whitesmoke">
+					<div class="row">
+						<div class="col-6 col-12-medium" style="margin-top: -20px">
+							<div class="menuitem card"><span>PB & J Sandwich</span><span class="menuitem" style="padding-left: 10px; float: right"> $5.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Egg & Cheese Sandwich</span><span class="menuitem" style="padding-left: 10px; float: right"> $5.25</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Ham, Egg & Cheese Sandwich</span><span class="menuitem" style="padding-left: 10px; float: right"> $5.75</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Bacon, Egg & Cheese Sandwich</span><span class="menuitem" style="padding-left: 10px; float: right"> $5.75</span></div><hr style="border-color: #222222"/>
+						</div>
+						<div class="col-6 col-12-medium" style="margin-top: -20px; padding-right: 15px">
+							<div class="menuitem card"><span>Egg, Avocado & Cheese Sandwich</span><span class="menuitem" style="padding-left: 10px; float: right"> $5.75</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Ham, Bacon, Egg & Cheese Sandwich</span><span class="menuitem" style="padding-left: 10px; float: right"> $5.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Ham, Bacon, Egg & Cheese Burrito</span><span class="menuitem" style="padding-left: 10px; float: right"> $5.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Chorizo, Egg & Cheese Burrito</span><span class="menuitem" style="padding-left: 10px; float: right"> $5.95</span></div><hr style="border-color: #222222"/>
+						</div>
+					</div>
+				</dl>
+			</div>
+
+			<h2 style="width: 100%; background-color: whitesmoke; border: 1px solid darkgrey; padding: 0.25em" id="Sandwiches" aria-expanded="true" aria-controls="more-2" class="pointer toggle-content2" hidden>
+				<span style="text-align:center;" class="text">Sandwiches</span> <span class="visually-hidden2"></span></h2>
+			<p></p>
+			<!--			<div class="col-12-medium col-6-large">-->
+			<div class="col-6 col-12-medium">
+				<dl id="more-2" class="fulltext2" style="background-color: whitesmoke">
+					<div class="row">
+						<div class="col-6 col-12-medium" style="margin-top: -20px">
+							<div class="menuitem card"><span>Ham</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.25</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Turkey</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.25</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Roast Beef</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.25</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Pastrami</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.25</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Veggie</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.25</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Tuna</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.25</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>French Dip</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.25</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Italian Submarine</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Turkey & Ham</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Clubhouse</span><span class="menuitem" style="padding-left: 10px; float: right"> $9.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Meatball</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>BLT</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>BBQ Beef</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.25</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>BBQ Ham</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.25</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Turkey Bacon</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Salami</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.25</span></div><hr style="border-color: #222222"/>
+						</div>
+						<div class="col-6 col-12-medium" style="margin-top: -20px; padding-right: 15px">
+							<div class="menuitem card"><span>Pastrami Dip</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.25</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Turkey & Avocado</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Turkey Bacon Melt</span><span class="menuitem" style="padding-left: 10px; float: right"> $9.25</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Turkey & Bacon Ranch</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Tuna Salad</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Tuna Melt</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.50</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Egg Salad</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.25</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Roast Beef Cheddar Melt</span><span class="menuitem" style="padding-left: 10px; float: right"> $9.25</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Shredded Beef Torta</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>California Club</span><span class="menuitem" style="padding-left: 10px; float: right"> $9.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Grilled Chicken</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Teriyaki Chicken</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Chicken Club</span><span class="menuitem" style="padding-left: 10px; float: right"> $9.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Chicken Salad</span><span class="menuitem" style="padding-left: 10px; float: right"> $9.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>BBQ Chicken</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Pastrami Ruben</span><span class="menuitem" style="padding-left: 10px; float: right"> $9.95</span></div><hr style="border-color: #222222"/>
+						</div>
+					</div>
+				</dl>
+			</div>
+
+			<h2 style="width: 100%; background-color: whitesmoke; border: 1px solid darkgrey; padding: 0.25em" id="Burgers" aria-expanded="true" aria-controls="more-3" class="pointer toggle-content3" hidden>
+				<span style="text-align:center;" class="text">Burgers</span> <span class="visually-hidden3"></span></h2>
+			<p></p>
+			<!--			<div class="col-12-medium col-6-large">-->
+			<div class="col-6 col-12-medium">
+				<dl id="more-3" class="fulltext3" style="background-color: whitesmoke">
+					<div class="row">
+						<div class="col-6 col-12-medium" style="margin-top: -20px">
+							<div class="menuitem card"><span>Bomber Burger</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Avocado Burger</span><span class="menuitem" style="padding-left: 10px; float: right"> $7.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Pastrami Burger</span><span class="menuitem" style="padding-left: 10px; float: right"> $7.95</span></div><hr style="border-color: #222222"/>
+						</div>
+						<div class="col-6 col-12-medium" style="margin-top: -20px; padding-right: 15px">
+							<div class="menuitem card"><span>Jalapeño Burger</span><span class="menuitem" style="padding-left: 10px; float: right"> $7.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Bacon Cheese Burger</span><span class="menuitem" style="padding-left: 10px; float: right"> $7.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Cheese Burger</span><span class="menuitem" style="padding-left: 10px; float: right"> $6.95</span></div><hr style="border-color: #222222"/>
+						</div>
+					</div>
+				</dl>
+			</div>
+
+			<h2 style="width: 100%; background-color: whitesmoke; border: 1px solid darkgrey; padding: 0.25em" id="Salads" aria-expanded="true" aria-controls="more-4" class="pointer toggle-content4" hidden>
+				<span style="text-align:center;" class="text">Salads</span> <span class="visually-hidden4"></span></h2>
+			<p></p>
+			<!--			<div class="col-12-medium col-6-large">-->
+			<div class="col-6 col-12-medium">
+				<dl id="more-4" class="fulltext4" style="background-color: whitesmoke">
+					<div class="row">
+						<div class="col-6 col-12-medium" style="margin-top: -20px">
+							<div class="menuitem card"><span>Chef Salad</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.25</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Tuna Salad</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.25</span></div><hr style="border-color: #222222"/>
+						</div>
+						<div class="col-6 col-12-medium" style="margin-top: -20px; padding-right: 15px">
+							<div class="menuitem card"><span>Grilled Chicken Salad</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.25</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Tossed Salad</span><span class="menuitem" style="padding-left: 10px; float: right"> $7.95</span></div><hr style="border-color: #222222"/>
+						</div>
+					</div>
+				</dl>
+			</div>
+
+			<h2 style="width: 100%; background-color: whitesmoke; border: 1px solid darkgrey; padding: 0.25em" id="Mexican" aria-expanded="true" aria-controls="more-5" class="pointer toggle-content5" hidden>
+				<span style="text-align:center;" class="text">Mexican</span> <span class="visually-hidden5"></span></h2>
+			<p></p>
+			<!--			<div class="col-12-medium col-6-large">-->
+			<div class="col-6 col-12-medium">
+				<dl id="more-5" class="fulltext5" style="background-color: whitesmoke">
+					<div class="row">
+						<div class="col-6 col-12-medium" style="margin-top: -20px">
+							<div class="menuitem card"><span>Nachos</span><span class="menuitem" style="padding-left: 10px; float: right"> $5.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Nachos Grande</span><span class="menuitem" style="padding-left: 10px; float: right"> $8.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Tostada w/ Guacamole</span><span class="menuitem" style="padding-left: 10px; float: right"> $5.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Tostada w/ Beef</span><span class="menuitem" style="padding-left: 10px; float: right"> $6.95</span></div><hr style="border-color: #222222"/>
+						</div>
+						<div class="col-6 col-12-medium" style="margin-top: -20px; padding-right: 15px">
+							<div class="menuitem card"><span>Cheese Quesadilla</span><span class="menuitem" style="padding-left: 10px; float: right"> $6.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Chicken Quesadilla</span><span class="menuitem" style="padding-left: 10px; float: right"> $9.95</span></div><hr style="border-color: #222222"/>
+							<div class="menuitem card"><span>Beef Quesadilla</span><span class="menuitem" style="padding-left: 10px; float: right"> $9.95</span></div><hr style="border-color: #222222"/>
+						</div>
+					</div>
+				</dl>
+			</div>
+		</div>
+	</div>
+<!--
+
+	<div id="main-wrapper">
+		<div class="container">
+			<div class="row gtr-200">
+				<div class="col-4 col-12-medium">
+
+					Sidebar
+					<div id="sidebar">
+						<section class="widget thumbnails">
+							<h3>Interesting stuff</h3>
+							<div class="grid">
+								<div class="row gtr-50">
+									<div class="col-6"><a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a></div>
+									<div class="col-6"><a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a></div>
+									<div class="col-6"><a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a></div>
+									<div class="col-6"><a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a></div>
 								</div>
 							</div>
-							<div class="col-6 col-12-medium">
-								<!-- Box -->
-								<section class="box feature">
-									<a href="#BreakfastBurritos" class="image featured"><img src="images/burrito.jpg" alt="" /></a>
-									<div class="inner">
-										<header>
-											<h3 style="text-align: center">Burritos</h3>
-										</header>
-									</div>
-								</section>
-
-							</div>
-						</div>
+							<a href="#" class="button icon fa-file-alt">More</a>
+						</section>
 					</div>
+
 				</div>
+				<div class="col-8 col-12-medium imp-medium">
 
-			<!-- Main -->
-				<div id="main-wrapper">
-					<div class="container">
-						<div class="row gtr-200">
-							<div class="col-4 col-12-medium">
-
-								<!-- Sidebar -->
-									<div id="sidebar">
-										<section class="widget thumbnails">
-											<h3>Interesting stuff</h3>
-											<div class="grid">
-												<div class="row gtr-50">
-													<div class="col-6"><a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a></div>
-													<div class="col-6"><a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a></div>
-													<div class="col-6"><a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a></div>
-													<div class="col-6"><a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a></div>
-												</div>
-											</div>
-											<a href="#" class="button icon fa-file-alt">More</a>
-										</section>
-									</div>
-
-							</div>
-							<div class="col-8 col-12-medium imp-medium">
-
-								<!-- Content -->
-									<div id="content">
-										<section class="last">
-											<h2 id="">So what's this all about?</h2>
-											<p>This is <strong>Verti</strong>, a free and fully responsive HTML5 site template by <a href="http://html5up.net">HTML5 UP</a>.
-											Verti is released under the <a href="http://html5up.net/license">Creative Commons Attribution license</a>, so feel free to use it for any personal or commercial project you might have going on (just don't forget to credit us for the design!)</p>
-											<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus. Praesent semper bibendum ipsum, et tristique augue fringilla eu. Vivamus id risus vel dolor auctor euismod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat. Aliquam luctus mattis lectus sit amet phasellus quam turpis.</p>
-											<a href="#" class="button icon solid fa-arrow-circle-right">Continue Reading</a>
-										</section>
-									</div>
-
-							</div>
-						</div>
+					 Content
+					<div id="content">
+						<section class="last">
+							<h2 id="">So what's this all about?</h2>
+							<p>This is <strong>Verti</strong>, a free and fully responsive HTML5 site template by <a href="http://html5up.net">HTML5 UP</a>.
+								Verti is released under the <a href="http://html5up.net/license">Creative Commons Attribution license</a>, so feel free to use it for any personal or commercial project you might have going on (just don't forget to credit us for the design!)</p>
+							<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus. Praesent semper bibendum ipsum, et tristique augue fringilla eu. Vivamus id risus vel dolor auctor euismod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat. Aliquam luctus mattis lectus sit amet phasellus quam turpis.</p>
+							<a href="#" class="button icon solid fa-arrow-circle-right">Continue Reading</a>
+						</section>
 					</div>
+
 				</div>
-
-			<!-- Footer -->
-			<!-- Footer -->
-			<footer-bar></footer-bar>
-
+			</div>
 		</div>
+	</div>
+-->
+	<!-- Footer -->
+	<!-- Footer -->
+	<footer-bar></footer-bar>
 
-		<!-- Scripts -->
+</div>
 
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+<!-- Scripts -->
 
-	</body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
 </html>

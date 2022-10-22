@@ -39,12 +39,17 @@
 		<style>
 			body {
 				background-image: url('images/Logo-noBackground.png');
-				background-color: rgba(185, 188, 196, 0.8);
+				background-color: rgba(185, 188, 196, 0.9);
 				background-blend-mode: lighten;
 				background-size: contain;
 			}
 			div.box {
 				background-color: transparent;
+			}
+			@media (max-width: 980px) {
+				.hide-when-small {
+					display: none;
+				}
 			}
 		</style>
 	</head>
@@ -53,6 +58,7 @@
 
 			<!-- Header -->
 				<div id="header-wrapper">
+					<img class="hide-when-small" src="images/Logo-noBackground.png" width="200" style="float: left; margin-left: 50px" alt="" />
 					<header id="header" class="container">
 
 						<!-- Logo -->
