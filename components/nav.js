@@ -12,21 +12,12 @@ class NavBarMenu extends HTMLElement {
                     <li id="menus">
                         <a href="menu.html">Menus</a>
                         <ul>
-                            <li><a href="menu.html#Breakfast">Breakfast</a>
-                                <ul>
-                                    <li><a href="menu.html#BreakfastSandwich">Sandwiches</a></li>
-                                    <li><a href="menu.html#BreakfastBurritos">Burritos</a></li>                                    
-                                </ul>
+                            <li>
+                                <a href="menu.html#Breakfast">Breakfast</a>                                
                             </li>
-                            <li><a href="menu.html#Lunch">Lunch</a>
-                                <ul>
-                                    <li><a href="menu.html#LunchSandwich">Sandwiches</a></li>
-                                    <li><a href="menu.html#LunchBurger">Burgers</a></li>
-                                    <li><a href="menu.html#LunchSouth">South of the border</a></li>
-                                    <li><a href="menu.html#LunchSalad">Salads</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="menu.html#Extra">Extras</a></li>
+                            <li>
+                                <a href="menu.html#Lunch">Lunch</a>                                
+                            </li>                            
                         </ul>
                     </li>
 <!--                    <li id="location"><a href="location.html">Location</a></li>-->
