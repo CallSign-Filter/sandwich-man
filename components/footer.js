@@ -10,7 +10,7 @@ class FooterText extends HTMLElement {
             <footer id="footer" class="container">
                     <div class="row">
                         <div class="col-12" style="text-align: center">
-                            <a class="image"><img src="../../images/yelp.png"/> </a>
+                            <a href="https://www.yelp.com/biz/the-sandwich-man-ventura" target="_blank" class="image"><img src="../../images/yelp.png"/> </a>
                         </div>
                     </div>
                 <div class="row">
