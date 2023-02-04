@@ -1,30 +1,13 @@
-Verti by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+This is the official website for The Sandwich Man thesandwichmanventura.com
 
+I used Verti by HTML5 UP as a base and took some components I built for my personal website, like the accordian expander on the menus.
 
-A super simple + modern responsive website template. Took a slightly different direction
-on the mobile version's slide out nav (floating button versus a full on titlebar).
+The photos I edited are done using gimp, as was the logo that I edited.
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+Full CI/CD process is code (master branch) -> Github -> Hostinger (git plugin) for hosting.
 
-(* = Not included)
+Domain is through Google Domains
 
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
-
-AJ
-aj@lkn.io | @ajlkn
-
-
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+Written by,
+Brandon Hessler
+brandonhessler.com
