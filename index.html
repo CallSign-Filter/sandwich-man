@@ -60,6 +60,50 @@
 					display: none;
 				}
 			}
+
+			.wordart {
+				font-family: Arial, sans-serif;
+				font-size: 55px;
+				font-weight: bold;
+				position: relative;
+				z-index: 1;
+				display: inline-block;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+			.wordart.purple {
+				transform: skew(0, -10deg) scale(1, 1.5);
+				-webkit-transform: skew(0, -10deg) scale(1, 1.5);
+				-moz-transform: skew(0, -10deg) scale(1, 1.5);
+				-o-transform: skew(0, -10deg) scale(1, 1.5);
+				-ms-transform: skew(0, -10deg) scale(1, 1.5);
+			}
+
+			.wordart.purple .text {
+				letter-spacing: 0.01em;
+				font-family: Impact;
+				background: #be2222;
+				background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…IgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+				background: -moz-linear-gradient(top, #be2222 0%, #3b52c5 73%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #be2222), color-stop(73%, #3b52c5));
+				background: -webkit-linear-gradient(top, #be2222 0%, #3b52c5 73%);
+				background: -o-linear-gradient(top, #be2222 0%, #3b52c5 73%);
+				background: -ms-linear-gradient(top, #be2222 0%, #3b52c5 73%);
+				background: linear-gradient(to bottom, #be2222 0%, #3b52c5 73%);
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#be2222', endColorstr='#3b52c5', GradientType=0);
+				-webkit-text-stroke: 0.01em #B28FFD;
+				filter: progid:DXImageTransform.Microsoft.Glow(Color=#b28ffd, Strength=1);
+				background-clip: text;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+
+			.wordart.purple .text .little-text {
+				font-size: 1.3REM;
+				position: relative;
+				top: -1.2em;
+				text-decoration: underline;
+			}
 		</style>
 	</head>
 	<body onload="activeNavTab()" class="is-preload homepage">
@@ -99,6 +143,28 @@
 					</div>
 				</div>
 
+			<div id="features-wrapper2">
+				<div class="container">
+					<div class="row">
+						<div class="col-1">
+						</div>
+						<div class="col-5 col-12-medium" style="margin-left: 20px">
+							<section class="feature">
+								<div class="wordart purple"><span class="text">$6<span class="text little-text">00</span><br style="margin-top: 16px; display: block; content: '';"/>Sub of the Day</span></div>
+							</section>
+						</div>
+						<div class="col-5 col-12-medium">
+							<ul style="font-size: 24px; font-weight: bold; margin-left: 20px">
+								<li><b>MONDAY &#8212; Ham</b></li>
+								<li><b>TUESDAY &#8212; Turkey</b></li>
+								<li><b>WEDNESDAY &#8212; Roast Beef</b></li>
+								<li><b>THURSDAY &#8212; Salami</b></li>
+								<li><b>FRIDAY &#8212; Tuna</b></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 			<!-- Features -->
 				<div id="features-wrapper">
 					<div class="container">
@@ -141,7 +207,7 @@
 										<div class="inner">
 											<header>
 												<h2>Catering</h2>
-												<p>From 10 people to 50 we've got it covered!</p>
+												<p>From 10 people to 1000 we've got it covered!</p>
 											</header>
 											<p>You enjoy the game, your family and your friends; we'll do the work.</p>
 										</div>
