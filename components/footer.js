@@ -28,7 +28,7 @@ class FooterText extends HTMLElement {
                                 </button>
                             </li>
                             <li><span>1575 Los Angeles Ave, Ventura, CA 93004</span></li>
-                            <li><span><a href="tel:805-647-5374">(805) 393-7280</a></span></li>
+                            <li><span><a href="tel:805-393-7280">(805) 393-7280</a></span></li>
                         </ul>
                     </div>
                 </div>
